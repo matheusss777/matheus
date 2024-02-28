@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movimento de elemento</title>
+</head>
+<body>
+    <div id="dv1"></div>
+        <style>
+            #dv1 {
+                width: 100px;
+                height: 100px;
+                border: 1px solid #000;
+                background-color: #f00;
+                position: absolute;
+                top: 0px;
+                left: 0px;
+            }
+        </style>
+        <script>
+            var dx;
+            var dy;
+            var px;
+            var py;
+            var obj; 
+            var tpm;
+            var vel;    
+            
+            function iniciar(){
+                dx = 0;
+                dy = 0;
+                px = 0;
+                py = 0;
+                obj = document.getElementById("dv1");
+                document.addEventListener("keydown", teclaDW);
+                document.addEventListener("keyup", teclaUp);
+                temp = setInterval(etenterframe,20)
+                vel = 10;
+
+            }
+            function teclaDW(){
+                var tecla = event.Keycode
+            }
+            </script>
+
+
+    
+    
+</body>
+</html>
